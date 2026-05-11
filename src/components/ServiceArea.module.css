@@ -1,0 +1,57 @@
+.serviceArea {
+  background-color: var(--bg-primary);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  background-color: var(--bg-surface);
+  border-radius: 12px;
+  padding: var(--space-lg) var(--space-md);
+  border: 1px solid var(--border-color);
+}
+
+.content {
+  flex: 1;
+}
+
+.content h2 {
+  margin-bottom: var(--space-sm);
+}
+
+.locations {
+  flex: 1;
+}
+
+.cityList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-sm);
+}
+
+.cityItem {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.check {
+  color: var(--accent-blue);
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    flex-direction: row;
+    align-items: center;
+    padding: var(--space-xl);
+  }
+
+  .cityList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,51 @@
+.ctaBand {
+  background: linear-gradient(
+    135deg,
+    var(--bg-secondary) 0%,
+    rgba(0, 136, 255, 0.1) 100%
+  );
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  align-items: center;
+  text-align: center;
+}
+
+.content {
+  max-width: 700px;
+}
+
+.content h2 {
+  margin-bottom: var(--space-xs);
+  color: var(--text-primary);
+}
+
+.content p {
+  color: var(--text-secondary);
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+  }
+
+  .content {
+    flex: 1;
+  }
+
+  .action {
+    flex-shrink: 0;
+  }
+}

@@ -1,0 +1,68 @@
+.hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://images.unsplash.com/photo-1549451371-64aa12a9920b?q=80&w=2070&auto=format&fit=crop'); /* Placeholder cinematic event image */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 11, 13, 0.7) 0%,
+    rgba(10, 11, 13, 0.9) 100%
+  );
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-xl);
+}
+
+.title {
+  margin-bottom: var(--space-sm);
+  color: #ffffff;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  opacity: 0; /* for animation */
+}
+
+.subtitle {
+  margin-bottom: var(--space-md);
+  color: var(--text-secondary);
+  opacity: 0; /* for animation */
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-sm);
+  justify-content: center;
+  opacity: 0; /* for animation */
+}
+
+@media (max-width: 768px) {
+  .actions {
+    flex-direction: column;
+  }
+}

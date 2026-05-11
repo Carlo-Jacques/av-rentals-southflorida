@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://avrentalssouthflorida.com
+
+# Sitemaps
+Sitemap: https://avrentalssouthflorida.com/sitemap.xml
